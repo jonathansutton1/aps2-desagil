@@ -1,14 +1,29 @@
 package br.edu.insper.desagil.joice;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.Assert.assertEquals;
 import org.junit.jupiter.api.Test;
+import br.edu.insper.desagil.joice.model.Calculadora;
 
 class CalculadoraCFCTest {
+	private double tolerancia = 0.05;
+	private Calculadora calculadora;
 
 	@Test
-	void test() {
-		fail("Not yet implementedd");
+	public void CobreTest() {
+		calculadora = new CalculadoraCFC();
+		assertEquals(8.89, calculadora.densidade(63.55, 0.128),tolerancia);
+	}
+
+	@Test
+	public void OuroTest() {
+		calculadora = new CalculadoraCFC();
+		assertEquals(19.36, calculadora.densidade(196.97, 0.144),tolerancia);
+	}
+
+	@Test
+	public void PrataTest() {
+		calculadora = new CalculadoraCFC();
+		assertEquals(10.60, calculadora.densidade(107.87, 0.144),tolerancia);
 	}
 
 }

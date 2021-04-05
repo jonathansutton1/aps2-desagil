@@ -13,7 +13,7 @@ class CalculadoraCCCTest {
 	@Test
 	public void NiobioTest() {
 		calculadora = new CalculadoraCCC();
-		assertEquals(8.57, calculadora.calcula(92.91, 0.143), tolerancia);  //densidade esperada, densidade obtida
+		assertEquals(8.57, calculadora.calcula(92.91, 0.143), tolerancia);  
 	}
 	
 	@Test
